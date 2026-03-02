@@ -6,11 +6,11 @@ WITH dates AS (
 )
 SELECT
   DateKey,
-  year(DateKey)  AS [Year],
-  quarter(DateKey) AS [Quarter],
-  month(DateKey) AS [Month],
+  year(DateKey)  AS Year,
+  quarter(DateKey) AS Quarter,
+  month(DateKey) AS Month,
   date_format(DateKey, 'MMMM') AS MonthName,
-  day(DateKey)   AS [Day],
+  day(DateKey)   AS Day,
   date_format(DateKey, 'EEEE') AS DayName,
   weekofyear(DateKey) AS WeekOfYear
 FROM dates;
